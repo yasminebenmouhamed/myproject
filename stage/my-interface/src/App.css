@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.hero {
+  position: relative;
+  background-image: url('./background.jpg'); /* Remplacez avec le chemin correct */
+  background-size: cover;
+  background-position: center;
+  height: 60vh; /* Ajustez pour augmenter la hauteur */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6); /* Ajout d'un overlay pour un meilleur contraste */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.register-btn {
+  background-color: #d82e8d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Courses Section */
+.courses {
+  padding: 20px;
+  text-align: center;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste automatiquement */
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.course {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.course:hover {
+  transform: scale(1.05);
+}
+
+.course img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.course h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.course p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contact {
+  background-color: #f9c74f;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-us {
+  background-color: #fdb933; /* Couleur jaune */
+  padding: 40px 20px;
+  text-align: center;
+}
+.contact-form {
+  max-width: 600px; /* Limite la largeur du formulaire */
+  margin: 0 auto;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #444;
+}
